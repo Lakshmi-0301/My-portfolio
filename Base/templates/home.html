@@ -1,0 +1,282 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar" class="flex s-around bg-color">
+      <div class="left-nav">
+        <h2 class="t-white">Portfolio</h2>
+      </div>
+      <div class="right-nav">
+        <ul>
+          <li><a href="#home" class="t-white roboto">Home</a></li>
+          <li><a href="#about" class="t-white roboto">About Me</a></li>
+          <li><a href="#skills" class="t-white roboto">Skills</a></li>
+          <li><a href="#projects" class="t-white roboto">Projects</a></li>
+          <li><a href="#contact" class="t-white roboto">Contact</a></li>
+        </ul>
+      </div>
+      <button id="themeToggle" class="btn poppins" style="margin-left: auto">
+        🌙 Dark Mode
+      </button>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="flex s-around w-80 m-auto">
+      <div class="home-left flex items-center">
+        <div class="home-content">
+          <h6 class="poppins">Hi, I'm</h6>
+          <h1 class="t-white">Lakshmi</h1>
+          <h4 class="poppins">Student at PSGTECH</h4>
+          <a
+            class="btn live poppins"
+            id="hireme"
+            href="https://www.linkedin.com/in/lakshmi-r-7153a031b/"
+            >Let's Talk</a
+          >
+        </div>
+      </div>
+      <div class="home-right flex s-center items-center">
+        <div class="circle flex s-center items-center" id="mainimage">
+          <img
+            src="{% static 'images/profilePhoto.jpeg' %}"
+            alt="profile photo"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h1 class="t-center my-2 t-white f-2">About Me</h1>
+      <div class="about-content flex s-around">
+        <div class="about-left flex s-center items-center" id="avatar">
+          <img src="{% static 'images/avatar.jpg' %}" alt="avatar" />
+        </div>
+        <div class="about-right flex">
+          <div class="about-content">
+            <h1 class="t-white m-b-1 poppins">Lakshmi</h1>
+            <p class="t-white poppins">
+              I'm a university student currently pursuing masters in Data
+              Science at PSG college of technology. Interested in Full-Stack ,
+              Machine Learning and Data analytics.
+            </p>
+            <a class="btn" id="hireme" href="static/Resume.pdf">Resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h1 class="t-center my-2 t-white f-2">Skills</h1>
+      <div class="services-container flex s-around h-50">
+        <div class="skills-left flex s-center items-center">
+          <img src="{% static 'images/skills.png' %}" alt="Skills Image" />
+        </div>
+        <div class="skills-right flex items-center">
+          <div class="skills-container">
+            <div class="python bar p-relative">
+              <span class="bar-content left t-white">Python</span>
+              <span class="bar-content right-skills t-white">95%</span>
+            </div>
+            <div class="C bar p-relative">
+              <span class="bar-content left t-white">C</span>
+              <span class="bar-content right-skills t-white">80%</span>
+            </div>
+            <div class="Cpp bar p-relative">
+              <span class="bar-content left t-white">C++</span>
+              <span class="bar-content right-skills t-white">80%</span>
+            </div>
+            <div class="html bar p-relative">
+              <span class="bar-content left t-white">HTML</span>
+              <span class="bar-content right-skills t-white">85%</span>
+            </div>
+            <div class="css bar p-relative">
+              <span class="bar-content left t-white">CSS</span>
+              <span class="bar-content right-skills t-white">85%</span>
+            </div>
+            <div class="js bar p-relative">
+              <span class="bar-content left t-white">JavaScript</span>
+              <span class="bar-content right-skills t-white">70%</span>
+            </div>
+            <div class="SQL bar p-relative">
+              <span class="bar-content left t-white">SQL</span>
+              <span class="bar-content right-skills t-white">90%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h1 class="t-center my-2 t-white f-2">Projects</h1>
+      <div class="projects-container flex s-center">
+        <div class="projects-item">
+          <h1 class="t-white poppins">Soft Paws Studio</h1>
+          <p class="t-white roboto">
+            Soft Paws Studios is an e-commerce platform built using Django,
+            HTML, CSS, JavaScript, and MySQL, to provide a seamless shopping
+            experience for users, from browsing products to placing orders and
+            leaving feedback.
+          </p>
+          <div class="buttons flex s-around">
+            <a
+              href="https://github.com/Lakshmi-0301/Soft_Paws_Studio"
+              target="_blank"
+              class="btn mx-1 m-top"
+              >GitHub</a
+            >
+          </div>
+        </div>
+        <div class="projects-item">
+          <h1 class="t-white poppins">My Portfolio</h1>
+          <p class="t-white roboto">
+            A modern, responsive personal portfolio website built using HTML,
+            CSS, JavaScript, and integrated with Django to showcase projects,
+            skills, and contact information with responsive design and theme
+            toggling.
+          </p>
+          <div class="buttons flex s-around">
+            <a href="#" target="_blank" class="btn mx-1 m-top">GitHub</a>
+          </div>
+        </div>
+        <div class="projects-item">
+          <h1 class="t-white poppins">Media Player Controller</h1>
+          <p class="t-white roboto">
+            This project is a web-based media player controller for MPV Media
+            Player built with Rust using the Actix Web framework. It allows
+            users to control MPV playback through a web interface and API
+            commands.
+          </p>
+          <div class="buttons flex s-around">
+            <a
+              href="https://github.com/Lakshmi-0301/Media-Player-Controller"
+              target="_blank"
+              class="btn mx-1 m-top"
+              >GitHub</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="m-b-1">
+      <h1 class="t-center my-2 t-white f-2">Contact Me</h1>
+      <div class="contact-container flex s-around items-center">
+        <div class="form" id="contactform">
+          <form method="post">
+            {% csrf_token %}
+            <div class="name form-div">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="poppins"
+                placeholder="Enter your name"
+              />
+            </div>
+            <div class="email form-div">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="poppins"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <div class="phone form-div">
+              <input
+                type="text"
+                name="number"
+                id="number"
+                class="poppins"
+                placeholder="Enter your phone"
+                required
+              />
+            </div>
+            <div class="textarea form-div">
+              <textarea
+                name="content"
+                id="textarea"
+                cols="30"
+                rows="10"
+                class="poppins"
+                placeholder="Enter your message"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn poppins" id="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <ul class="flex s-center w-80 m-auto my-2">
+        <li><a href="#home" class="poppins">Home</a></li>
+        <li><a href="#about" class="poppins">About Me</a></li>
+        <li><a href="#skills" class="poppins">Skills</a></li>
+        <li><a href="#projects" class="poppins">Projects</a></li>
+        <li><a href="#contact" class="poppins">Contact</a></li>
+      </ul>
+      <ul class="flex s-center w-80 font-awesome">
+        <li>
+          <a
+            href="https://www.linkedin.com/in/lakshmi-r-7153a031b/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/Lakshmi-0301" target="_blank">
+            <i class="fa-brands fa-github"></i> GitHub
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/lakshmi_03_/" target="_blank">
+            <i class="fa-brands fa-instagram"></i> Instagram
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+
+  <script>
+    const toggleBtn = document.getElementById("themeToggle");
+    const body = document.body;
+
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme && savedTheme === "dark") {
+      body.classList.add("dark-mode");
+    }
+
+    // Toggle dark mode on button click
+    toggleBtn.addEventListener("click", () => {
+      body.classList.toggle("dark-mode");
+      const isDark = body.classList.contains("dark-mode");
+
+      localStorage.setItem("theme", isDark ? "dark" : "light");
+
+      toggleBtn.textContent = isDark ? "☀️ Light Mode" : "🌙 Dark Mode";
+    });
+  </script>
+</html>
