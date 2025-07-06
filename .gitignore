@@ -1,0 +1,39 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django migrations
+**/migrations/
+*.sqlite3
+
+# Environment
+.env
+venv/
+env/
+ENV/
+.venv/
+
+# VSCode or IDE settings
+.vscode/
+.idea/
+
+
+# Compiled static files
+staticfiles/
+static_root/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Resume or other personal files
+static/*.pdf
+
+# Logs and local cache
+*.log
+*.pot
+*.pyc
+.cache/
+coverage/
+htmlcov/
